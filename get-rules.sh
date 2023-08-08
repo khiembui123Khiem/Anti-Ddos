@@ -1,4 +1,4 @@
 curl -X GET \
-"https://api.cloudflare.com/client/v4/zones/3490413be1c77a344f765f12f4463f20/firewall/rules" \
--H "X-Auth-Email: aulax432@gmail.com" \
--H "X-Auth-Key: c773770966510b528aff596071164bbd4b7b3"
+"https://api.cloudflare.com/client/v4/zones/56f26a8e48dc86411f384a09a5ca47c8/firewall/rules" \
+-H "X-Auth-Email: khiemsky4@gmail.com" \
+-H "X-Auth-Key: e0f9958a15d747f1d7ab339db302b23537292"
