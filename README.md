@@ -1,7 +1,7 @@
 # Chương trình quản lý auto on/off rule cloudflare
 # ***Cài đặt***
 ```
-wget https://raw.githubusercontent.com/DauDau432/Anti-Ddos/main/install-api.sh
+wget https://raw.githubusercontent.com/khiembui123Khiem/Anti-Ddos/main/install-api.sh
 ```
 ```
 bash install.sh
@@ -10,7 +10,7 @@ bash install.sh
 ======================================================================
 GET rule
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/Anti-Ddos/main/get-rules.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/khiembui123Khiem/Anti-Ddos/main/get-rules.sh)
 ```
 
 Cấu trúc GET rules
