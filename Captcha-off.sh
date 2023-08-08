@@ -1,16 +1,16 @@
-curl -X PUT "https://api.cloudflare.com/client/v4/zones/3490413be1c77a344f765f12f4463f20/firewall/rules/930fba41d8b7402d8485248be4dcb676" \
-     -H "X-Auth-Email: aulax432@gmail.com" \
-     -H "X-Auth-Key: c773770966510b528aff596071164bbd4b7b3" \
+curl -X PUT "https://api.cloudflare.com/client/v4/zones/56f26a8e48dc86411f384a09a5ca47c8/firewall/rules/873eee64cbc1445e8e3741c5f00d7a07" \
+     -H "X-Auth-Email: khiemsky4@gmail.com" \
+     -H "X-Auth-Key: e0f9958a15d747f1d7ab339db302b23537292" \
      -H "Content-Type: application/json" \
      --data '{
      "action": "managed_challenge",
-     "priority": 564,
+     "priority": 2000,
      "paused": true,
-     "description": "Managed Challenge Việt Nam",
+     "description": "Captcha Thiết Bị",
      "filter": {
-    "id": "1f99db421a2a48319e92e1d55905f556",
-    "expression": "(http.user_agent contains \"iPhone\" and ip.geoip.country eq \"VN\" and http.request.version in {\"HTTP/2\" \"HTTP                   /3\"} and http.request.method in {\"GET\" \"POST\"} and http.host eq \"daukute.us\") or (http.user_agent contains \"Android\" and ip.geoi                   p.country eq \"VN\" and http.request.version in {\"HTTP/2\" \"HTTP/3\"} and http.request.method in {\"GET\" \"POST\"} and http.host eq \"                   daukute.us\") or (http.user_agent contains \"Windows\" and ip.geoip.country eq \"VN\" and http.request.version in {\"HTTP/2\" \"HTTP/3\"}                    and http.request.method in {\"GET\" \"POST\"} and http.host eq \"daukute.us\")",
+    "id": "df02f2a35a954a718c7ea6879edfc468",
+    "expression": "(ip.geoip.country in {\"KP\" \"VN\" \"KR\"} and http.request.method in {\"GET\" \"POST\"} and http.request.version in {\"HTTP/2\" \"HTTP/3\"} and http.user_agent contains \"iPhone\") or (ip.geoip.country in {\"KP\" \"VN\" \"KR\"} and http.request.method in {\"GET\" \"POST\"} and http.request.version in {\"HTTP/2\" \"HTTP/3\"} and http.user_agent contains \"Windows\") or (ip.geoip.country in {\"KP\" \"VN\" \"KR\"} and http.request.method in {\"GET\" \"POST\"} and http.request.version in {\"HTTP/2\" \"HTTP/3\"} and http.user_agent contains \"Android\")",
     "paused": false,
-    "description": "Managed Challenge Việt Nam"
+    "description": "Captcha Thiết Bị"
   }
   }'
